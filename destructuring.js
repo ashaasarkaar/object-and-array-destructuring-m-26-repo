@@ -10,5 +10,9 @@ const product ={name: 'samsang s21', price: 1000, camera: '64mp'}
 const name  = product.name = 'iphone';
 const price = product.price;
 const camera = product.camera;
-console.log(product);
-console.log(price);  // aivabe amra object ar key ar value gulo k access korar jonno, variable a same namer value access ar code likhe store korte pari, jate bar bar likhte na hoi.
+// console.log(product);
+// console.log(price);  // aivabe amra object ar key ar value gulo k access korar jonno, variable a same namer value access ar code likhe store korte pari, jate bar bar likhte na hoi.
+
+//object destructuring
+const {name1, shreni, age, roll} = {name1: 'salaat', shreni: 12, age: 17, roll: 1}; 
+console.log(name1, shreni, age, roll);  // aivabe amra access korte pari change o korte pari
