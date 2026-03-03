@@ -16,3 +16,11 @@ const camera = product.camera;
 //object destructuring
 const {name1, shreni, age, roll} = {name1: 'salaat', shreni: 12, age: 17, roll: 1}; 
 console.log(name1, shreni, age, roll);  // aivabe amra access korte pari change o korte pari
+
+//object destructuring method a notun key & value add kora
+const {name3, position, age1, salary1 = 10, extra: extra,} = {name3: 'Azaan', position: 'programmar', age1: 23, salary1: 20};
+console.log(name3, position,age1, salary1, extra);   // amra default value set korte parbo but main value na
+
+// array destructuring
+const[fn, sn, tn, four, fifth = 3] = [1, 2, 3];
+console.log(fn, sn, tn, four, fifth);
