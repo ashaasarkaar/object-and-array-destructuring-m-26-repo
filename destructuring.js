@@ -15,7 +15,7 @@ const camera = product.camera;
 
 //object destructuring
 const {name1, shreni, age, roll} = {name1: 'salaat', shreni: 12, age: 17, roll: 1}; 
-console.log(name1, shreni, age, roll);  // aivabe amra access korte pari change o korte pari
+// console.log(name1, shreni, age, roll);  // aivabe amra access korte pari change o korte pari
 
 //object destructuring method a notun key & value add kora
 const {name3, position, age1, salary1 = 10, extra: extra,} = {name3: 'Azaan', position: 'programmar', age1: 23, salary1: 20};
@@ -45,7 +45,7 @@ const employees = [
 ];
 
 for(let {name, age} of employees) {
-    console.log(`${name} is ${age} years old!!!`);
+    // console.log(`${name} is ${age} years old!!!`);
 }
 // Object এর property গুলো কেন 'name' এইভাবে single quote এ লেখা?
 //  name: 'Rijik' এইভাবে কেন লেখা হয় নাই?
@@ -56,3 +56,21 @@ for(let {name, age} of employees) {
 //1. Space থাকে
 //2. Special character থাকে
 //3. Number দিয়ে শুরু হয় 
+
+
+//Destructuring Array?
+//Assign variables with a default value:
+let a, b, c;
+[a=0, b=5, c=7] = [1, 2]
+// console.log(a)
+// console.log(b)
+// console.log(c)
+
+//Swapping Value:
+let num1 = 1;
+let num2 = 2;
+
+[num1, num2] = [num2, num1] //swap
+console.log(num1)
+console.log(num2)
+
