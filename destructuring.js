@@ -71,13 +71,18 @@ let num1 = 1;
 let num2 = 2;
 
 [num1, num2] = [num2, num1] //swap
-console.log(num1)
-console.log(num2)
+// console.log(num1)
+// console.log(num2)
 
 //Destructuring with functions
 function numbers(){
     return[1, 2, 3, 4]
 }
 let [num3, num4] = numbers();
-console.log(num3);
-console.log(num4);
+// console.log(num3);
+// console.log(num4);
+
+//Rest(...)operator:
+let [num5, ...num6] = [1, 2, 3,4,5,6];
+console.log(num5)
+console.log(num6)
