@@ -24,3 +24,35 @@ console.log(name3, position,age1, salary1, extra);   // amra default value set k
 // array destructuring
 const[fn, sn, tn, four, fifth = 3] = [1, 2, 3];
 console.log(fn, sn, tn, four, fifth);
+
+// Use object destructuring in loops
+const employees = [
+    {
+        'name': 'Rijik',    
+        'address': '15th Park Avenue',
+        'age': 3
+    },
+    {
+        'name': 'Azaan',
+        'address': 'USA',
+        'age': 33
+    },
+    {
+        'name': 'Salaat',
+        'address': 'London',
+        'age': 16
+    }
+];
+
+for(let {name, age} of employees) {
+    console.log(`${name} is ${age} years old!!!`);
+}
+// Object এর property গুলো কেন 'name' এইভাবে single quote এ লেখা?
+//  name: 'Rijik' এইভাবে কেন লেখা হয় নাই?
+//দুইভাবেই লেখা যায়।
+//'name' লেখা বাধ্যতামূলক না।
+//When We will use Quatation in Property
+//Quote লাগে যখন property name:
+//1. Space থাকে
+//2. Special character থাকে
+//3. Number দিয়ে শুরু হয় 
