@@ -74,3 +74,10 @@ let num2 = 2;
 console.log(num1)
 console.log(num2)
 
+//Destructuring with functions
+function numbers(){
+    return[1, 2, 3, 4]
+}
+let [num3, num4] = numbers();
+console.log(num3);
+console.log(num4);
